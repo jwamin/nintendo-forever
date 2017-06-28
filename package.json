@@ -1,0 +1,23 @@
+{
+  "name": "nintendo-forever",
+  "version": "1.0.0",
+  "description": "NINTENDO UK STOCK MONITOR =========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "test": "node index.js test"
+  },
+  "config":{
+    "test":"https://store.nintendo.co.uk/nintendo-switch-game/splatoon-2-and-cap/11483594.html",
+    "live":"https://store.nintendo.co.uk/nintendo-classic-mini-hardware/nintendo-classic-mini-super-nintendo-entertainment-system/11495711.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "forever-monitor": "^1.7.1",
+    "nightwatch": "^0.9.16",
+    "phantomjs": "^2.1.7"
+  }
+}
