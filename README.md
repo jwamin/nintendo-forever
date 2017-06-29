@@ -1,9 +1,11 @@
 NINTENDO UK STOCK MONITOR
 =========================
 
-Built with node, forever, phantomJS and nightwatch
+Built with node, htmlparser and
 --------------------------------------------------
 
 `npm i`
 
-`npm run`
+`npm start`
+
+`npm start test`
