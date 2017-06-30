@@ -1,11 +1,13 @@
 NINTENDO UK STOCK MONITOR
 =========================
 
-Built with node, htmlparser and
+Built with node, htmlparser and soupselect
 --------------------------------------------------
 
-`npm i`
+requires [nodejs](https://nodejs.org/en/)
 
-`npm start`
+`npm i` - install components and start process `Ctrl-C` to exit
 
-`npm start test`
+`npm start` - hit snes page
+
+`npm start test` - hit test page

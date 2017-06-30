@@ -8,8 +8,8 @@ var select = require('soupselect').select;
 
 // 1. Hit site
 // 2. does product list button 'productbuy.js-e2e-add-basket' has text "Out of stock"
-//   IF YES, hit web service to notify, wait for confirmation, close.
-//   IF NO, wait 30secs, then loop
+//   IF YES, wait, then loop
+//   IF NO, hit web service to notify, wait for confirmation, close.
 // 3. Run forever
 // console.log(config.config[ENV])
 // var options = {
@@ -25,7 +25,7 @@ function ringBell(){
 }
 
 function main(){
-  console.log("hitting"+config.config[ENV])
+  console.log("hitting "+config.config[ENV])
   var handler = new htmlparser.DefaultHandler(function (error, dom) {
       if (error)
           process.exit()
@@ -55,7 +55,7 @@ function main(){
         ringBell()
 
         //hit notification service
-        
+
       }
 
     })
